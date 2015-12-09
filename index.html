@@ -43,9 +43,21 @@
 <p>First, we determined the identities of the most frequently used words, and graphically represented these frequent words in word clouds and frequency plots. </p>
 
 <ul>
-<li><p>Word clouds allowed for a clear and easily comprehensible visual representation of the topics addressed in social media posts. </p></li>
+<li>
+<p>Word clouds allowed for a clear and easily comprehensible visual representation of the topics addressed in social media posts. </p>
+
+<h4>
+<a id="word-cloud-for-entire-dataset" class="anchor" href="#word-cloud-for-entire-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Word Cloud for Entire Dataset</h4>
+
+<p><a href="http://imgur.com/i0t63I7"><img src="http://i.imgur.com/i0t63I7.png" title="source: imgur.com"></a></p>
+</li>
 <li><p>Frequency plots were also included so that a numeric representation of term frequency was available, in addition to the more subjective representation of frequency seen in the word clouds. </p></li>
 </ul>
+
+<h4>
+<a id="frequency-plot-for-entire-dataset" class="anchor" href="#frequency-plot-for-entire-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Frequency Plot for Entire Dataset</h4>
+
+<p><a href="http://imgur.com/L6t1Xlb"><img src="http://i.imgur.com/L6t1Xlb.png" title="source: imgur.com"></a></p>
 
 <p><em>In each of these graphic representations, the most common topics throughout the social media text are clearly presented. Visual representations were created for the entirety of the social media text, and were then created for each of the individual banks (i.e., Banks A, B, C, and D).</em></p>
 
@@ -62,6 +74,16 @@
 
 <p><em>Sentiment was scored on a scale of 0-100, with 0 being associated with negative sentiment and 100 being associated with positive sentiment. Neutral words did not receive a sentiment score. The sentiment scores were averaged, and these averages were represented through a bar graph. Sentiment analysis and graphical representations of same were generated for the entire dataset, as well as for each individual bank. Further, each graph compared the sentiment of frequent terms seen between two different social media sites, Twitter and Facebook</em></p>
 
+<h4>
+<a id="average-sentiment-scores-for-entire-dataset" class="anchor" href="#average-sentiment-scores-for-entire-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Average Sentiment Scores for Entire Dataset</h4>
+
+<p><a href="http://imgur.com/d8mkFuh"><img src="http://i.imgur.com/d8mkFuh.png?1" title="source: imgur.com"></a></p>
+
+<h4>
+<a id="boxplot-illustrating-sentiment-scores-for-entire-dataset" class="anchor" href="#boxplot-illustrating-sentiment-scores-for-entire-dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boxplot Illustrating Sentiment Scores for Entire Dataset</h4>
+
+<p><a href="http://imgur.com/X3n79rf"><img src="http://i.imgur.com/X3n79rf.png?1" title="source: imgur.com"></a></p>
+
 <h1>
 <a id="how-did-we-execute-these-goals" class="anchor" href="#how-did-we-execute-these-goals" aria-hidden="true"><span class="octicon octicon-link"></span></a>How did we execute these goals?</h1>
 
@@ -69,7 +91,44 @@
 
 <p><a href="http://imgur.com/oHrv5xe"><img src="http://i.imgur.com/oHrv5xe.png" title="source: imgur.com"></a></p>
 
-<p><strong>Insert code in blocks, matching each block to a bubble in the flowchart/comment in the code</strong></p>
+<h1>
+<a id="our-code" class="anchor" href="#our-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Our Code</h1>
+
+<h2>
+<a id="creation-of-data-frame-and-corpus" class="anchor" href="#creation-of-data-frame-and-corpus" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Creation of Data Frame and Corpus</em>
+</h2>
+
+<h2>
+<a id="apply-tm-library" class="anchor" href="#apply-tm-library" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Apply TM Library</em>
+</h2>
+
+<h2>
+<a id="cleaning-the-text" class="anchor" href="#cleaning-the-text" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Cleaning the text</em>
+</h2>
+
+<h2>
+<a id="creation-of-smaller-corpora-for-each-bank-a-d" class="anchor" href="#creation-of-smaller-corpora-for-each-bank-a-d" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Creation of smaller corpora for each Bank A-D</em>
+</h2>
+
+<h2>
+<a id="sentiment-analysis-1" class="anchor" href="#sentiment-analysis-1" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Sentiment Analysis</em>
+</h2>
+
+<h2>
+<a id="spell-check-through-correction-of-misspelled-frequently-used-words" class="anchor" href="#spell-check-through-correction-of-misspelled-frequently-used-words" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>"Spell Check" through correction of misspelled, frequently used words</em>
+</h2>
+
+<h2>
+<a id="create-term-frequency-graph" class="anchor" href="#create-term-frequency-graph" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Create Term Frequency Graph</em>
+</h2>
+
+<h2>
+<a id="creation-of-word-cloud" class="anchor" href="#creation-of-word-cloud" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Creation of Word Cloud</em>
+</h2>
+
+<h3>
+<a id="repeat-spell-check-term-frequency-graph-and-word-cloud-generation-for-each-of-the-corpora" class="anchor" href="#repeat-spell-check-term-frequency-graph-and-word-cloud-generation-for-each-of-the-corpora" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Repeat spell check, term frequency graph, and word cloud generation for each of the corpora.</em>
+</h3>
 
 <h1>
 <a id="results" class="anchor" href="#results" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results</h1>
@@ -98,7 +157,7 @@
 <p><strong><em>insert word cloud/ggplot</em></strong></p>
 
 <h3>
-<a id="sentiment-analysis-1" class="anchor" href="#sentiment-analysis-1" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Sentiment Analysis</strong>
+<a id="sentiment-analysis-2" class="anchor" href="#sentiment-analysis-2" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Sentiment Analysis</strong>
 </h3>
 
 <p>Average Sentiment Score of Entire Dataset: 62</p>
@@ -129,18 +188,31 @@
 <li>Deposit </li>
 <li>Close </li>
 <li>Check </li>
-<li>Center </li>
+<li>Center 
+####Frequency Plot, Bank A
+<a href="http://imgur.com/zXoK8vL"><img src="http://i.imgur.com/zXoK8vL.png" title="source: imgur.com"></a>
+##### Word Cloud, Bank A
+<a href="http://imgur.com/mMAEZHI"><img src="http://i.imgur.com/mMAEZHI.png" title="source: imgur.com"></a>
+</li>
 </ol>
 
-<p><strong><em>insert word cloud/ggplot</em></strong></p>
-
 <h3>
-<a id="sentiment-analysis-2" class="anchor" href="#sentiment-analysis-2" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Sentiment Analysis</strong>
+<a id="sentiment-analysis-3" class="anchor" href="#sentiment-analysis-3" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Sentiment Analysis</strong>
 </h3>
 
 <p>Average Sentiment Score of Entire Dataset: 65</p>
 
 <p><em>Facebook was over twice as positive as Twitter, and Facebook had much more variability within and instances of strong sentiment.</em> </p>
+
+<h4>
+<a id="average-sentiment-scores-bank-a" class="anchor" href="#average-sentiment-scores-bank-a" aria-hidden="true"><span class="octicon octicon-link"></span></a>Average Sentiment Scores, Bank A</h4>
+
+<p><a href="http://imgur.com/YPlwQKU"><img src="http://i.imgur.com/YPlwQKU.png" title="source: imgur.com"></a></p>
+
+<h4>
+<a id="boxplot-illustrating-sentiment-scores-bank-a" class="anchor" href="#boxplot-illustrating-sentiment-scores-bank-a" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boxplot Illustrating Sentiment Scores, Bank A</h4>
+
+<p><a href="http://imgur.com/cmRPy4A"><img src="http://i.imgur.com/cmRPy4A.png" title="source: imgur.com"></a></p>
 
 <h2>
 <a id="bank-b" class="anchor" href="#bank-b" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Bank B</em>
@@ -172,15 +244,33 @@
 <li>Account </li>
 </ol>
 
-<p><strong><em>insert word cloud/ggplot</em></strong></p>
+<h4>
+<a id="frequency-plot-bank-b" class="anchor" href="#frequency-plot-bank-b" aria-hidden="true"><span class="octicon octicon-link"></span></a>Frequency Plot, Bank B</h4>
+
+<p><a href="http://imgur.com/06WV2J9"><img src="http://i.imgur.com/06WV2J9.png" title="source: imgur.com"></a></p>
+
+<h4>
+<a id="word-cloud-bank-b" class="anchor" href="#word-cloud-bank-b" aria-hidden="true"><span class="octicon octicon-link"></span></a>Word Cloud, Bank B</h4>
+
+<p><a href="http://imgur.com/9sOdzGM"><img src="http://i.imgur.com/9sOdzGM.png" title="source: imgur.com"></a></p>
 
 <h3>
-<a id="sentiment-analysis-3" class="anchor" href="#sentiment-analysis-3" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Sentiment Analysis</strong>
+<a id="sentiment-analysis-4" class="anchor" href="#sentiment-analysis-4" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Sentiment Analysis</strong>
 </h3>
 
 <p>Average Sentiment Score of Entire Dataset: 55</p>
 
 <p><em>Facebook was slightly more positive as Twitter, and Facebook had slightly more variability within and instances of strong sentiment.</em> </p>
+
+<h4>
+<a id="average-sentiment-scores-bank-b" class="anchor" href="#average-sentiment-scores-bank-b" aria-hidden="true"><span class="octicon octicon-link"></span></a>Average Sentiment Scores, Bank B</h4>
+
+<p><a href="http://imgur.com/Uf7DhrY"><img src="http://i.imgur.com/Uf7DhrY.png" title="source: imgur.com"></a></p>
+
+<h4>
+<a id="boxplot-illustrating-sentiment-scores-bank-b" class="anchor" href="#boxplot-illustrating-sentiment-scores-bank-b" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boxplot Illustrating Sentiment Scores, Bank B</h4>
+
+<p><a href="http://imgur.com/wayNWPP"><img src="http://i.imgur.com/wayNWPP.png" title="source: imgur.com"></a></p>
 
 <h2>
 <a id="bank-c" class="anchor" href="#bank-c" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Bank C</em>
@@ -202,15 +292,33 @@
 <li>Account </li>
 </ol>
 
-<p><strong><em>insert word cloud/ggplot</em></strong></p>
+<h4>
+<a id="frequency-plot-bank-c" class="anchor" href="#frequency-plot-bank-c" aria-hidden="true"><span class="octicon octicon-link"></span></a>Frequency Plot, Bank C</h4>
+
+<p><a href="http://imgur.com/x0EnllK"><img src="http://i.imgur.com/x0EnllK.png" title="source: imgur.com"></a></p>
+
+<h4>
+<a id="word-cloud-bank-c" class="anchor" href="#word-cloud-bank-c" aria-hidden="true"><span class="octicon octicon-link"></span></a>Word Cloud, Bank C</h4>
+
+<p><a href="http://imgur.com/B79ZjH6"><img src="http://i.imgur.com/B79ZjH6.png" title="source: imgur.com"></a></p>
 
 <h3>
-<a id="sentiment-analysis-4" class="anchor" href="#sentiment-analysis-4" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Sentiment Analysis</strong>
+<a id="sentiment-analysis-5" class="anchor" href="#sentiment-analysis-5" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Sentiment Analysis</strong>
 </h3>
 
 <p>Average Sentiment Score of Entire Dataset: 52</p>
 
 <p><em>Facebook was over three times more positive than Twitter, and Facebook had more variability within and instances of strong sentiment.</em></p>
+
+<h4>
+<a id="average-sentiment-scores-bank-c" class="anchor" href="#average-sentiment-scores-bank-c" aria-hidden="true"><span class="octicon octicon-link"></span></a>Average Sentiment Scores, Bank C</h4>
+
+<p><a href="http://imgur.com/nSiQJDK"><img src="http://i.imgur.com/nSiQJDK.png" title="source: imgur.com"></a></p>
+
+<h4>
+<a id="boxplot-illustrating-sentiment-scores-bank-c" class="anchor" href="#boxplot-illustrating-sentiment-scores-bank-c" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boxplot Illustrating Sentiment Scores, Bank C</h4>
+
+<p><a href="http://imgur.com/yZ5L1ei"><img src="http://i.imgur.com/yZ5L1ei.png" title="source: imgur.com"></a></p>
 
 <h2>
 <a id="bank-d" class="anchor" href="#bank-d" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Bank D</em>
@@ -232,15 +340,33 @@
 <li>Business</li>
 </ol>
 
-<p><strong><em>insert word cloud/ggplot</em></strong></p>
+<h4>
+<a id="frequency-plot-bank-d" class="anchor" href="#frequency-plot-bank-d" aria-hidden="true"><span class="octicon octicon-link"></span></a>Frequency Plot, Bank D</h4>
+
+<p><a href="http://imgur.com/3MeTEd1"><img src="http://i.imgur.com/3MeTEd1.png" title="source: imgur.com"></a></p>
+
+<h4>
+<a id="word-cloud-bank-d" class="anchor" href="#word-cloud-bank-d" aria-hidden="true"><span class="octicon octicon-link"></span></a>Word Cloud, Bank D</h4>
+
+<p><a href="http://imgur.com/eNoAlVJ"><img src="http://i.imgur.com/eNoAlVJ.png" title="source: imgur.com"></a></p>
 
 <h3>
-<a id="sentiment-analysis-5" class="anchor" href="#sentiment-analysis-5" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Sentiment Analysis</strong>
+<a id="sentiment-analysis-6" class="anchor" href="#sentiment-analysis-6" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Sentiment Analysis</strong>
 </h3>
 
 <p>Average Sentiment Score of Entire Dataset: 62</p>
 
 <p><em>Facebook was slightly more positive as Twitter, and Facebook had slightly more variability within and instances of strong sentiment.</em></p>
+
+<h4>
+<a id="average-sentiment-scores-bank-d" class="anchor" href="#average-sentiment-scores-bank-d" aria-hidden="true"><span class="octicon octicon-link"></span></a>Average Sentiment Scores, Bank D</h4>
+
+<p><a href="http://imgur.com/j74lcbn"><img src="http://i.imgur.com/j74lcbn.png" title="source: imgur.com"></a></p>
+
+<h4>
+<a id="boxplot-illustrating-sentiment-scores-bank-d" class="anchor" href="#boxplot-illustrating-sentiment-scores-bank-d" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boxplot Illustrating Sentiment Scores, Bank D</h4>
+
+<p><a href="http://imgur.com/VsC9Oly"><img src="http://i.imgur.com/VsC9Oly.png" title="source: imgur.com"></a></p>
 
 <h3>
 <a id="as-visually-evidenced-by-the-sentiment-bar-graphs-it-would-appear-that-positive-or-negative-sentiment-is-correlated-to-social-media-platform-in-each-of-the-individual-banks-as-well-as-the-entire-dataset-facebook-was-associated-with-more-positive-posts-while-twitter-was-conversely-associated-with-more-negative-posts-this-finding-implies-that-in-order-to-effectively-interpret-data-from-social-media-posts-data-should-be-collected-from-multiple-platforms-to-minimize-sampling-bias" class="anchor" href="#as-visually-evidenced-by-the-sentiment-bar-graphs-it-would-appear-that-positive-or-negative-sentiment-is-correlated-to-social-media-platform-in-each-of-the-individual-banks-as-well-as-the-entire-dataset-facebook-was-associated-with-more-positive-posts-while-twitter-was-conversely-associated-with-more-negative-posts-this-finding-implies-that-in-order-to-effectively-interpret-data-from-social-media-posts-data-should-be-collected-from-multiple-platforms-to-minimize-sampling-bias" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>As visually evidenced by the sentiment bar graphs, it would appear that positive or negative sentiment is correlated to social media platform. In each of the individual banks, as well as the entire dataset, Facebook was associated with more positive posts, while Twitter was conversely associated with more negative posts. This finding implies that, in order to effectively interpret data from social media posts, data should be collected from multiple platforms to minimize sampling bias.</em>
