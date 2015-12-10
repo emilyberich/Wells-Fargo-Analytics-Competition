@@ -162,6 +162,10 @@ docs &lt;- tm_map(docs, removeWords, myStopwords, lazy = T)
 <p>Remove white space </p>
 
 <pre><code>docs &lt;- tm_map(docs, stripWhitespace)
+
+docsCopy &lt;- docs
+docs &lt;- tm_map(docs, stemDocument)
+docs &lt;- Corpus(VectorSource(docs))
 </code></pre>
 
 <h2>
