@@ -236,7 +236,7 @@ tdmD &lt;- TermDocumentMatrix(bankD.docs, control = list(wordLengths = c(1, Inf)
 neg &lt;- scan('negative-words.txt',what='character',comment.char=';')
 </code></pre>
 
-<p>Apply text to positive and negative dictionaries</p>
+<p>Creation of the custom function score.sentiment </p>
 
 <pre><code>score.sentiment = function(sentences, pos.words, neg.words, .progress='none')
 
