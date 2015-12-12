@@ -822,15 +822,17 @@ layout1 &lt;- layout.fruchterman.reingold(g)
 plot(g, layout=layout1)
 </code></pre>
 
-<p>Improve visual's layout and clarity 
-    V(g)$label.cex &lt;- 2.2*colSums(termMatrix)/max(colSums(termMatrix))+.2
-    V(g)$label.color &lt;- rgb(0, 0, .2, .8)
-    V(g)$frame.color &lt;- NA
-    egam &lt;- (log(E(g)$weight)+2) / max(log(E(g)$weight)+2)
-    E(g)$color &lt;- rgb(.5, .5, 0, egam)
-    E(g)$width &lt;- egam
-    #plot the graph in layout1
-    plot(g, layout=layout1)</p>
+<p>Improve visual's layout and clarity </p>
+
+<pre><code>V(g)$label.cex &lt;- 2.2*colSums(termMatrix)/max(colSums(termMatrix))+.2
+V(g)$label.color &lt;- rgb(0, 0, .2, .8)
+V(g)$frame.color &lt;- NA
+egam &lt;- (log(E(g)$weight)+2) / max(log(E(g)$weight)+2)
+E(g)$color &lt;- rgb(.5, .5, 0, egam)
+E(g)$width &lt;- egam
+#plot the graph in layout1
+plot(g, layout=layout1)
+</code></pre>
 
 <h5>
 <a id="in-future-work-on-this-project-we-would-like-to-create-a-term-adjacency-matrix-for-bank-a---currently-however-technical-and-temporal-constraints-prevent-us-from-providing-same" class="anchor" href="#in-future-work-on-this-project-we-would-like-to-create-a-term-adjacency-matrix-for-bank-a---currently-however-technical-and-temporal-constraints-prevent-us-from-providing-same" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>In future work on this project, we would like to create a term adjacency matrix for Bank A-- currently, however, technical and temporal constraints prevent us from providing same.</em>
@@ -1001,6 +1003,12 @@ plot(g, layout=layout1)
 
 <p><a href="http://imgur.com/wayNWPP"><img src="http://i.imgur.com/wayNWPP.png" title="source: imgur.com"></a></p>
 
+<h3>
+<a id="term-adjacency-matrix-bank-b" class="anchor" href="#term-adjacency-matrix-bank-b" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Term Adjacency Matrix, Bank B</strong>
+</h3>
+
+<p><a href="http://imgur.com/QX4YMdR"><img src="http://i.imgur.com/QX4YMdR.png" title="source: imgur.com"></a></p>
+
 <h2>
 <a id="bank-c" class="anchor" href="#bank-c" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Bank C</em>
 </h2>
@@ -1049,6 +1057,12 @@ plot(g, layout=layout1)
 
 <p><a href="http://imgur.com/yZ5L1ei"><img src="http://i.imgur.com/yZ5L1ei.png" title="source: imgur.com"></a></p>
 
+<h3>
+<a id="term-adjacency-matrix-bank-c" class="anchor" href="#term-adjacency-matrix-bank-c" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Term Adjacency Matrix, Bank C</strong>
+</h3>
+
+<p><a href="http://imgur.com/ly19j7j"><img src="http://i.imgur.com/ly19j7j.png" title="source: imgur.com"></a></p>
+
 <h2>
 <a id="bank-d" class="anchor" href="#bank-d" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Bank D</em>
 </h2>
@@ -1096,6 +1110,12 @@ plot(g, layout=layout1)
 <a id="boxplot-illustrating-sentiment-scores-bank-d" class="anchor" href="#boxplot-illustrating-sentiment-scores-bank-d" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boxplot Illustrating Sentiment Scores, Bank D</h4>
 
 <p><a href="http://imgur.com/VsC9Oly"><img src="http://i.imgur.com/VsC9Oly.png" title="source: imgur.com"></a></p>
+
+<h3>
+<a id="term-adjacency-matrix-bank-d" class="anchor" href="#term-adjacency-matrix-bank-d" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Term Adjacency Matrix, Bank D</strong>
+</h3>
+
+<p><a href="http://imgur.com/oWMnz5B"><img src="http://i.imgur.com/oWMnz5B.png" title="source: imgur.com"></a></p>
 
 <h3>
 <a id="as-visually-evidenced-by-the-sentiment-bar-graphs-it-would-appear-that-positive-or-negative-sentiment-is-correlated-to-social-media-platform-in-each-of-the-individual-banks-as-well-as-the-entire-dataset-facebook-was-associated-with-more-positive-posts-while-twitter-was-conversely-associated-with-more-negative-posts-this-finding-implies-that-in-order-to-effectively-interpret-data-from-social-media-posts-data-should-be-collected-from-multiple-platforms-to-minimize-sampling-bias" class="anchor" href="#as-visually-evidenced-by-the-sentiment-bar-graphs-it-would-appear-that-positive-or-negative-sentiment-is-correlated-to-social-media-platform-in-each-of-the-individual-banks-as-well-as-the-entire-dataset-facebook-was-associated-with-more-positive-posts-while-twitter-was-conversely-associated-with-more-negative-posts-this-finding-implies-that-in-order-to-effectively-interpret-data-from-social-media-posts-data-should-be-collected-from-multiple-platforms-to-minimize-sampling-bias" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>As visually evidenced by the sentiment bar graphs, it would appear that positive or negative sentiment is correlated to social media platform. In each of the individual banks, as well as the entire dataset, Facebook was associated with more positive posts, while Twitter was conversely associated with more negative posts. This finding implies that, in order to effectively interpret data from social media posts, data should be collected from multiple platforms to minimize sampling bias.</em>
