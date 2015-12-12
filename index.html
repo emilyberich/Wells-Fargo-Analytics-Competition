@@ -792,7 +792,7 @@ wordcloud(words = names(word.freq), freq = word.freq, min.freq=700, random.order
 <a id="creation-of-term-adjacency-matrices" class="anchor" href="#creation-of-term-adjacency-matrices" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Creation of Term Adjacency Matrices</em>
 </h2>
 
-<p>Apply sparse function to term document matrix</p>
+<p>Apply sparse function to term document matrix; here, the term document matrix of Bank D is used </p>
 
 <pre><code>tdmD.sparse &lt;- removeSparseTerms(tdmD, 0.98)
 termDocMatrix &lt;- as.matrix(tdmD.sparse)
@@ -803,9 +803,11 @@ termDocMatrix &lt;- as.matrix(tdmD.sparse)
 <pre><code>termDocMatrix[termDocMatrix&gt;=1] &lt;- 1
 </code></pre>
 
-<p>Transform Boolean matrix into term adjacency matrix 
-    termMatrix &lt;- termDocMatrix %*% t(termDocMatrix)
-    termMatrix[5:10,5:10]</p>
+<p>Transform Boolean matrix into term adjacency matrix </p>
+
+<pre><code>termMatrix &lt;- termDocMatrix %*% t(termDocMatrix)
+termMatrix[5:10,5:10]
+</code></pre>
 
 <p>Create visual of term adjacency matrix, using the CRAN package igraph </p>
 
@@ -829,6 +831,10 @@ plot(g, layout=layout1)
     E(g)$width &lt;- egam
     #plot the graph in layout1
     plot(g, layout=layout1)</p>
+
+<h5>
+<a id="in-future-work-on-this-project-we-would-like-to-create-a-term-adjacency-matrix-for-bank-a---currently-however-technical-and-temporal-constraints-prevent-us-from-providing-same" class="anchor" href="#in-future-work-on-this-project-we-would-like-to-create-a-term-adjacency-matrix-for-bank-a---currently-however-technical-and-temporal-constraints-prevent-us-from-providing-same" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>In future work on this project, we would like to create a term adjacency matrix for Bank A-- currently, however, technical and temporal constraints prevent us from providing same.</em>
+</h5>
 
 <h1>
 <a id="results" class="anchor" href="#results" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results</h1>
