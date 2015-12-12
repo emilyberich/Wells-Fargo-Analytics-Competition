@@ -788,6 +788,48 @@ library(wordcloud)
 wordcloud(words = names(word.freq), freq = word.freq, min.freq=700, random.order=F, random.color=F, colors = pal)
 </code></pre>
 
+<h2>
+<a id="creation-of-term-adjacency-matrices" class="anchor" href="#creation-of-term-adjacency-matrices" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Creation of Term Adjacency Matrices</em>
+</h2>
+
+<p>Apply sparse function to term document matrix</p>
+
+<pre><code>tdmD.sparse &lt;- removeSparseTerms(tdmD, 0.98)
+termDocMatrix &lt;- as.matrix(tdmD.sparse)
+</code></pre>
+
+<p>Transform "sparse" term document matrix into a Boolean matrix </p>
+
+<pre><code>termDocMatrix[termDocMatrix&gt;=1] &lt;- 1
+</code></pre>
+
+<p>Transform Boolean matrix into term adjacency matrix 
+    termMatrix &lt;- termDocMatrix %*% t(termDocMatrix)
+    termMatrix[5:10,5:10]</p>
+
+<p>Create visual of term adjacency matrix, using the CRAN package igraph </p>
+
+<pre><code>library(igraph)
+g &lt;- graph.adjacency(termMatrix, weighted=T, mode = "undirected")
+g &lt;- simplify(g)
+#v=verticles 
+V(g)$label &lt;- V(g)$name
+V(g)$degree &lt;- degree(g)
+set.seed(3952)
+layout1 &lt;- layout.fruchterman.reingold(g)
+plot(g, layout=layout1)
+</code></pre>
+
+<p>Improve visual's layout and clarity 
+    V(g)$label.cex &lt;- 2.2*colSums(termMatrix)/max(colSums(termMatrix))+.2
+    V(g)$label.color &lt;- rgb(0, 0, .2, .8)
+    V(g)$frame.color &lt;- NA
+    egam &lt;- (log(E(g)$weight)+2) / max(log(E(g)$weight)+2)
+    E(g)$color &lt;- rgb(.5, .5, 0, egam)
+    E(g)$width &lt;- egam
+    #plot the graph in layout1
+    plot(g, layout=layout1)</p>
+
 <h1>
 <a id="results" class="anchor" href="#results" aria-hidden="true"><span class="octicon octicon-link"></span></a>Results</h1>
 
